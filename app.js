@@ -1,5 +1,5 @@
 setTimeout(function() {
-    document.getElementById('vehicle-body').style.display = 'none';
+    // document.getElementById('vehicle-body').style.display = 'none';
     // window.location.href = "heart.html"; 
   }, 6000)
   
@@ -238,8 +238,8 @@ setTimeout(function() {
       document.getElementById('pinkboard').style.display = '';
       document.getElementById('tree-wrap').style.display = 'none';
       document.getElementById('tree-wrap').style.display = 'none';
-      document.getElementById('hdden').style.display = 'none';
-      document.getElementById('show').style.display = 'flex';
+      // document.getElementById('hdden').style.display = 'none';
+      // document.getElementById('show').style.display = 'flex';
       onResize();
       render();
     }, 5000)
