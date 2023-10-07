@@ -97,22 +97,24 @@
   <div class="box">
     <canvas id="pinkboard"></canvas>
   </div>
-  <audio autoplay   loop id="audioPlayer" class="mp3">
-    <source src="nhac.mp3" type="audio/mpeg">
-
+  <iframe src="a.mp3" allow="autoplay" id="audio" style="display: none"></iframe>
+  <audio id="player" autoplay loop>
+    <source src="nhac.mp3" type="audio/mp3">
   </audio>
-  
+
+  <script src="app.js"></script>
   <script>
-
-
-
-    window.onload = function () {
-      const audioPlayer = document.getElementById('audioPlayer');
-      audioPlayer.play();
-    }
     /*
    * Settings
+
    */
+   window.addEventListener('beforeunload', function(event) {
+      // Gọi sự kiện trước khi trang bị tải lại
+
+      // Chuyển hướng đến trang khác
+      window.location.href = 'index.html'});
+
+
     var settings = {
       particles: {
         length: 2000, // maximum amount of particles
