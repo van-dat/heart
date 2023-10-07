@@ -261,10 +261,10 @@
         }
 
         .vehicle-body {
-            width: 500px;
-            height: 220px;
+            width: 40%;
+            height: 40%;
             position: absolute;
-            right: 20%;
+            right: 0%;
             bottom: 33px;
             z-index: 9;
 
@@ -273,6 +273,17 @@
             border-radius: 15px 60px 0 15px;
             animation: run 15s infinite ease;
 
+        }
+
+        @media (max-width: 767px) {
+
+            /* Đặt kiểu cho các phần tử chỉ trên màn hình điện thoại */
+            .vehicle-body {
+            width: 80%;
+            height: 20%;
+        }
+
+            /* Thay đổi giao diện hoặc bố trí cho màn hình điện thoại nếu cần */
         }
 
         @keyframes run {
@@ -2202,8 +2213,6 @@
             top: -2px;
             vertical-align: middle;
         }
-       
-        
     </style>
 </head>
 
@@ -2507,7 +2516,7 @@
         </div>
         <div id="show" class="box">
             <canvas id="pinkboard"></canvas>
-          </div>
+        </div>
     </div>
 
 

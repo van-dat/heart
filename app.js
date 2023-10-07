@@ -2,14 +2,7 @@ setTimeout(function() {
     document.getElementById('vehicle-body').style.display = 'none';
     // window.location.href = "heart.html"; 
   }, 6000)
-  setTimeout(function() {
-    document.getElementById('ground-line').style.display = 'none';
-    document.getElementById('pinkboard').style.display = '';
-    document.getElementById('tree-wrap').style.display = 'none';
-    document.getElementById('tree-wrap').style.display = 'none';
-    document.getElementById('hdden').style.display = 'none';
-    document.getElementById('show').style.display = 'flex';
-  }, 5000)
+  
 
 
 
@@ -17,13 +10,6 @@ setTimeout(function() {
  * Settings
 
  */
- window.addEventListener('beforeunload', function(event) {
-    // Gọi sự kiện trước khi trang bị tải lại
-
-    // Chuyển hướng đến trang khác
-    window.location.href = 'index.html'});
-
-
   var settings = {
     particles: {
       length: 2000, // maximum amount of particles
@@ -246,8 +232,15 @@ setTimeout(function() {
     window.onresize = onResize;
 
     // delay rendering bootstrap
-    setTimeout(function () {
+   
+    setTimeout(function() {
+      document.getElementById('ground-line').style.display = 'none';
+      document.getElementById('pinkboard').style.display = '';
+      document.getElementById('tree-wrap').style.display = 'none';
+      document.getElementById('tree-wrap').style.display = 'none';
+      document.getElementById('hdden').style.display = 'none';
+      document.getElementById('show').style.display = 'flex';
       onResize();
       render();
-    }, 10);
+    }, 5000)
   })(document.getElementById('pinkboard'));
